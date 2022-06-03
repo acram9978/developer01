@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace unit03_jumper
 {
@@ -6,7 +7,20 @@ namespace unit03_jumper
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<string> parachuteMan = new List<string>();
+            parachuteMan.Add(@" ___");
+            parachuteMan.Add(@"/___\");
+            parachuteMan.Add(@"\   /");
+            parachuteMan.Add(@" \ / ");
+            parachuteMan.Add(@"  0  ");
+            parachuteMan.Add(@" /|\ ");
+            parachuteMan.Add(@" / \ ");
+
+            foreach(string person in parachuteMan) {
+                Console.WriteLine(person);
+            }
+
+            
         }
     }
 }
